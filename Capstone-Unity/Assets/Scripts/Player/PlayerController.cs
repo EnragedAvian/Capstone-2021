@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
 
-        Vector3 movementBase = _inputVector.z * transform.forward + _inputVector.x * transform.right;
+        Vector3 movementBase = _inputVector.z * new Vector3(transform.forward.x, 0f, transform.forward.z).normalized + _inputVector.x * new Vector3(transform.right.x, 0f, transform.right.z).normalized;
 
         if (Input.GetKey(KeyCode.Space))
         {
