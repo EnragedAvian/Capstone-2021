@@ -5,6 +5,9 @@ using UnityEngine;
 public class InstrumentNode : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    public Instrument instrument;
+
     void Start()
     {
         
